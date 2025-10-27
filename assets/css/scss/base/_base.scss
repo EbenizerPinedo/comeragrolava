@@ -1,0 +1,8 @@
+html {
+  font-size: 100%;
+  text-size-adjust: none;
+
+  @media only screen and (max-width : 320px) {
+    font-size: 90%;
+  }
+}

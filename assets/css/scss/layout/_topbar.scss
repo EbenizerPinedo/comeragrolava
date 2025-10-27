@@ -1,0 +1,231 @@
+.topbar {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.2s ease-in-out;
+
+  &__wrapper {
+    width: calc(100% - 6rem);
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-menu {
+    margin-left: auto;
+    display: none;
+  }
+
+  &__logo {
+    img {
+      width: auto;
+      max-height: 3rem;
+    }
+
+    .custom-logo-dark {
+      display: none;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        a {
+          margin-left: 1.5rem;
+          padding: 0 6px 2px 6px;
+          background: linear-gradient(to bottom, transparent 70%, rgba(255, 255, 255, 0.3) 0) center center/0% 75% no-repeat;
+          font-size: 0.75rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.9);
+          transition: background-size .2s ease;
+
+          &:hover {
+            color: #FFF;
+          }
+
+          &:hover {
+            background-size: 100% 100%;
+          }
+          &:active {
+            background-size: 80% 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-active {
+    background: rgba(255,255,255,.98);
+    border-bottom: 3px solid #71C63B;
+
+    .topbar__logo {
+      .custom-logo {
+        display: none;
+      }
+
+      .custom-logo-dark {
+        display: flex;
+      }
+    }
+
+    .topbar__menu {
+      ul li a {
+        color: #45A00A;
+        background: linear-gradient(to bottom, transparent 70%, rgba(92, 255, 92, 0.397) 0) center center/0% 75% no-repeat;
+
+        &:hover {
+          background-size: 100% 100%;
+        }
+        &:active {
+          background-size: 80% 100%;
+        }
+      }
+    }
+
+    .toggle-menu {
+      span {
+        background: #45A00A;
+      }
+    }
+  }
+
+  .mobile-menu {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255,255,255, 0.95);
+    width: 100%;
+    height: -webkit-fill-available;
+    transform: translateX(100%);
+    transition: .4s;
+
+    &__wrapper {
+      padding: 1.5rem 1rem;
+    }
+
+    .toggle-menu {
+      span {
+        background: #45A00A;
+      }
+
+      &:hover > span {
+        background: #45A00A;
+      }
+    }
+
+    &__navigation {
+      margin-top: 2.5rem;
+
+      ul {
+        li {
+          margin-bottom: 1rem;
+          text-align: right;
+
+          a {
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: right;
+            text-transform: uppercase;
+            color: #45A00A;
+          }
+        }
+      }
+    }
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+
+  .toggle-menu {
+    position: relative;
+    width: 1.5rem;
+    height: 1rem;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  
+    span {
+      position: absolute;
+      height: 0.125rem;
+      width: 100%;
+      left: 0;
+      background: #FFFFFF;
+      border-radius: 9px;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+  
+      &:nth-child(1) {
+        top: 0rem;
+      }
+  
+      &:nth-child(2) {
+        top: 0.375rem;
+        width: 80%;
+      }
+  
+      &:nth-child(3) {
+        top: 0.75rem;
+      }
+    }
+
+    &:hover > span {
+      background: #FFFFFF;
+    }
+  
+    &.is-open span {
+      &:nth-child(1) {
+        top: 0.375rem;
+        transform: rotate(135deg);
+      }
+  
+      &:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+      }
+  
+      &:nth-child(3) {
+        top: 0.375rem;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  @media only screen and (max-width : 768px) {
+    &__wrapper {
+      width: calc(100% - 4rem);
+    }
+
+    .toggle-menu {
+      display: block !important;
+    }
+
+    &__logo {
+      img {
+        max-height: 2.2rem;
+      }
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width : 480px) {
+    &__wrapper {
+      width: calc(100% - 2rem);
+    }
+  }
+}

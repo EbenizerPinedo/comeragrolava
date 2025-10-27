@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  line-height: 1.2rem;
+  background: #DEFFC9;
+
+  .site-info {
+    width: 80rem;
+    padding: 1rem 0;
+  }
+
+  @media only screen and (max-width : 768px) {
+    .site-info {
+      width: calc(100% - 4rem);
+    }
+  }
+}
