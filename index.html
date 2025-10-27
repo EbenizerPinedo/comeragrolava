@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/animate.min.css" rel="stylesheet" />
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/slick.js"></script>
+	<script src="assets/js/navigation.js"></script>
+
+	<script>
+		$('.toggle-menu').on('click', function () {
+    $('.toggle-menu, .mobile-menu').toggleClass('is-open');
+  });
+	</script>
+
+  <title>Comercializadora Agrolava</title>
+</head>
+
+<body id="page" class="site">
+	
+	<header id="masthead" class="site-header">
+		<div class="topbar">
+			<div class="topbar__wrapper">
+				<div class="topbar__logo">
+          <img class="custom-logo" src="assets/img/logos/logo-dark.png" alt="Comercializadora Agroindustrial Lava">
+					
+          
+          <a href="index.html">
+						<img class="custom-logo-dark" src="assets/img/logos/logo-light.png" alt="Comercializadora Agroindustrial Lava">
+					</a>
+				</div><!-- .topbar__logo -->
+				<div class="topbar__menu">
+					<ul class="">
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+						<li><a href="index.html#contacto">Contacto</a></li>
+					</ul>
+				</div><!-- .topbar__menu -->
+				<div class="toggle-menu" id="closeToggleMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__wrapper">
+					<div class="toggle-menu" id="closeToggleMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="mobile-menu__navigation">
+
+					<ul class="">
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+						<li><a class="contacto-item" href="index.html#contacto">Contacto</a></li>
+					</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+
+  <div class="slider">
+		<ul class="slider__slides" id="featured-slider">
+			<li class="slide">
+				<div class="slide__caption-wrapper">
+					<div class="slide__caption">
+						<div class="slide__caption-title">
+							Somos Comercializadora Agroindustrial Lava
+						</div>
+						<div class="slide__caption-content">
+							Vendemos y fabricamos maquinaria para lavado de alta presión, barredoras, fregadoras de pisos, equipos de lubricación y sistemas de humectación
+						</div>
+						<a class="slide__caption-button" href="productos.html">
+							Ver productos
+						</a>
+					</div>
+				</div>
+				<img class="slide__image" src="assets/img/slider/productos.jpeg" alt="">
+				<div class="slide__overlay"></div>
+			</li>
+			<li class="slide">
+				<div class="slide__caption-wrapper">
+					<div class="slide__caption">
+						<div class="slide__caption-title">
+							Amplio catálogo de productos y servicios
+						</div>
+						<div class="slide__caption-content">
+							Venta, fabricación e instalación de parihuelas para fumigación en invernaderos, aspersores para cultivos bajos y hortalizas
+						</div>
+						<a class="slide__caption-button" href="servicios.html">
+							Ver servicios
+						</a>
+					</div>
+				</div>
+				<img class="slide__image" src="assets/img/slider/servicios.jpeg" alt="">
+				<div class="slide__overlay"></div>
+			</li>
+		</ul>
+		<div class="slider__waves">
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+				</g>
+			</svg>
+		</div>	
+	</div>
+
+	<div class="page-content">
+		<div class="page-content__wrapper">
+			<div class="page-section__title is-right">
+				<span class="is-small">Conócenos</span>
+				<h2 class="animate__animated animate__fadeInLeftBig">Conócenos</h2>
+			</div>
+
+			<div class="page-section__content">
+				<p>En Comercializadora Agrolava brindamos soluciones a las necesidades de nuestros clientes 
+				tanto del sector industrial como agricola.</p>
+
+				<p>Ofrecemos proximidad con nuestros clientes, con una vocación de servicio que dé respuesta 
+				rápida y garantizada a la resolución de cualquier problema.</p>
+
+				<p>Mantenemos los mejores precios en todos los productos y marcas que comercializa la compañía, 
+				ofreciendo siempre refacciones y servicios, al menor costo y en el menor tiempo posible.</p>
+			</div>
+
+			<div class="page-section__cards">
+				<a href="<?php echo get_home_url() . '/servicios' ?>" class="service-card is-in-homepage">
+					<div class="service-card__bg">
+						<div class="service-card__overlay"></div>
+						<img src="assets/img/productos/39.jpg" alt="">
+					</div>
+					
+					<div class="service-card__content">
+						Servicios
+					</div>
+				</a>
+
+				<a href="<?php echo get_home_url() . '/productos' ?>" class="service-card is-in-homepage">
+					<div class="service-card__bg">
+						<div class="service-card__overlay"></div>
+						<img src="assets/img/productos/41.jpg" alt="">
+					</div>
+					
+					<div class="service-card__content">
+						Productos
+					</div>
+				</a>
+
+				<a href="<?php echo get_home_url() . '/sobre-nosotros' ?>" class="service-card is-in-homepage">
+					<div class="service-card__bg">
+						<div class="service-card__overlay"></div>
+						<img src="assets/img/productos/40.jpg" alt="">
+					</div>
+					
+					<div class="service-card__content">
+						Sobre nosotros
+					</div>
+				</a>
+			</div>
+
+			<div class="page-section__title" id="contacto">
+				<span class="is-small">Contacto</span>
+				<h2 class="animate__animated animate__fadeInRightBig">Contacto</h2>
+			</div>
+
+			<div class="page-section__content">
+
+				<div class="page-section__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 39.03125 47 C 39.015625 47 39 47 38.984375 47 C 31.46875 46.753906 22.664063 39.46875 16.597656 33.398438 C 10.523438 27.328125 3.238281 18.519531 3.003906 11.039063 C 2.917969 8.414063 9.359375 3.746094 9.425781 3.699219 C 11.097656 2.535156 12.953125 2.949219 13.714844 4.003906 C 14.230469 4.71875 19.113281 12.117188 19.644531 12.957031 C 20.195313 13.828125 20.113281 15.125 19.425781 16.425781 C 19.046875 17.148438 17.789063 19.359375 17.199219 20.390625 C 17.835938 21.296875 19.519531 23.519531 22.996094 26.996094 C 26.476563 30.472656 28.695313 32.160156 29.605469 32.796875 C 30.636719 32.207031 32.847656 30.949219 33.570313 30.570313 C 34.851563 29.890625 36.140625 29.804688 37.019531 30.34375 C 37.917969 30.894531 45.296875 35.800781 45.976563 36.273438 C 46.546875 36.675781 46.914063 37.363281 46.988281 38.164063 C 47.058594 38.972656 46.808594 39.828125 46.289063 40.574219 C 46.246094 40.636719 41.632813 47 39.03125 47 Z"></path></svg>
+					<span>462 626 52 57</span>
+				</div>
+
+				<div class="page-section__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 39.03125 47 C 39.015625 47 39 47 38.984375 47 C 31.46875 46.753906 22.664063 39.46875 16.597656 33.398438 C 10.523438 27.328125 3.238281 18.519531 3.003906 11.039063 C 2.917969 8.414063 9.359375 3.746094 9.425781 3.699219 C 11.097656 2.535156 12.953125 2.949219 13.714844 4.003906 C 14.230469 4.71875 19.113281 12.117188 19.644531 12.957031 C 20.195313 13.828125 20.113281 15.125 19.425781 16.425781 C 19.046875 17.148438 17.789063 19.359375 17.199219 20.390625 C 17.835938 21.296875 19.519531 23.519531 22.996094 26.996094 C 26.476563 30.472656 28.695313 32.160156 29.605469 32.796875 C 30.636719 32.207031 32.847656 30.949219 33.570313 30.570313 C 34.851563 29.890625 36.140625 29.804688 37.019531 30.34375 C 37.917969 30.894531 45.296875 35.800781 45.976563 36.273438 C 46.546875 36.675781 46.914063 37.363281 46.988281 38.164063 C 47.058594 38.972656 46.808594 39.828125 46.289063 40.574219 C 46.246094 40.636719 41.632813 47 39.03125 47 Z"></path></svg>
+					<span>462 626 53 18</span>
+				</div>
+
+				<div class="page-section__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M 15.203125 17.136719 L 15.109375 17.136719 C 14.390625 19.15625 13.089844 20.164063 11.199219 20.164063 C 9.78125 20.164063 8.640625 19.636719 7.773438 18.578125 C 6.902344 17.523438 6.46875 16.058594 6.46875 14.1875 C 6.46875 11.769531 7.070313 9.800781 8.273438 8.28125 C 9.472656 6.765625 10.921875 6.007813 12.613281 6.007813 C 14.144531 6.007813 15.105469 6.625 15.496094 7.863281 L 15.558594 7.863281 L 15.710938 6.292969 L 19.175781 6.292969 C 18.714844 10.796875 18.480469 13.738281 18.480469 15.125 C 18.480469 16.605469 18.871094 17.34375 19.652344 17.34375 C 20.476563 17.34375 21.152344 16.78125 21.6875 15.664063 C 22.21875 14.542969 22.488281 13.078125 22.488281 11.273438 C 22.488281 8.800781 21.722656 6.773438 20.191406 5.191406 C 18.660156 3.613281 16.527344 2.820313 13.785156 2.820313 C 10.847656 2.820313 8.40625 3.875 6.460938 5.984375 C 4.515625 8.09375 3.542969 10.664063 3.542969 13.699219 C 3.542969 16.636719 4.402344 18.949219 6.121094 20.640625 C 7.84375 22.332031 10.214844 23.179688 13.246094 23.179688 C 15.558594 23.179688 17.671875 22.726563 19.59375 21.816406 L 19.59375 24.84375 C 17.835938 25.613281 15.578125 26 12.816406 26 C 9.023438 26 5.941406 24.882813 3.566406 22.648438 C 1.1875 20.410156 0 17.40625 0 13.632813 C 0 9.785156 1.269531 6.554688 3.804688 3.933594 C 6.339844 1.3125 9.605469 0 13.601563 0 C 17.296875 0 20.289063 1.015625 22.574219 3.050781 C 24.859375 5.085938 26 7.769531 26 11.097656 C 26 13.835938 25.300781 16.03125 23.90625 17.6875 C 22.507813 19.339844 20.777344 20.167969 18.714844 20.167969 C 17.699219 20.167969 16.871094 19.886719 16.234375 19.328125 C 15.597656 18.765625 15.253906 18.035156 15.203125 17.136719 Z M 13.152344 8.765625 C 12.230469 8.765625 11.476563 9.308594 10.898438 10.390625 C 10.316406 11.476563 10.027344 12.730469 10.027344 14.15625 C 10.027344 15.171875 10.226563 15.960938 10.621094 16.527344 C 11.015625 17.09375 11.523438 17.375 12.152344 17.375 C 13.117188 17.375 13.878906 16.84375 14.433594 15.773438 C 14.984375 14.707031 15.261719 13.28125 15.261719 11.496094 C 15.261719 10.648438 15.070313 9.984375 14.683594 9.496094 C 14.300781 9.011719 13.789063 8.765625 13.152344 8.765625 Z"></path></svg>
+					<span>ventas@comeragrolava.com.mx</span>
+				</div>
+
+				<div class="page-section__item">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M 15.203125 17.136719 L 15.109375 17.136719 C 14.390625 19.15625 13.089844 20.164063 11.199219 20.164063 C 9.78125 20.164063 8.640625 19.636719 7.773438 18.578125 C 6.902344 17.523438 6.46875 16.058594 6.46875 14.1875 C 6.46875 11.769531 7.070313 9.800781 8.273438 8.28125 C 9.472656 6.765625 10.921875 6.007813 12.613281 6.007813 C 14.144531 6.007813 15.105469 6.625 15.496094 7.863281 L 15.558594 7.863281 L 15.710938 6.292969 L 19.175781 6.292969 C 18.714844 10.796875 18.480469 13.738281 18.480469 15.125 C 18.480469 16.605469 18.871094 17.34375 19.652344 17.34375 C 20.476563 17.34375 21.152344 16.78125 21.6875 15.664063 C 22.21875 14.542969 22.488281 13.078125 22.488281 11.273438 C 22.488281 8.800781 21.722656 6.773438 20.191406 5.191406 C 18.660156 3.613281 16.527344 2.820313 13.785156 2.820313 C 10.847656 2.820313 8.40625 3.875 6.460938 5.984375 C 4.515625 8.09375 3.542969 10.664063 3.542969 13.699219 C 3.542969 16.636719 4.402344 18.949219 6.121094 20.640625 C 7.84375 22.332031 10.214844 23.179688 13.246094 23.179688 C 15.558594 23.179688 17.671875 22.726563 19.59375 21.816406 L 19.59375 24.84375 C 17.835938 25.613281 15.578125 26 12.816406 26 C 9.023438 26 5.941406 24.882813 3.566406 22.648438 C 1.1875 20.410156 0 17.40625 0 13.632813 C 0 9.785156 1.269531 6.554688 3.804688 3.933594 C 6.339844 1.3125 9.605469 0 13.601563 0 C 17.296875 0 20.289063 1.015625 22.574219 3.050781 C 24.859375 5.085938 26 7.769531 26 11.097656 C 26 13.835938 25.300781 16.03125 23.90625 17.6875 C 22.507813 19.339844 20.777344 20.167969 18.714844 20.167969 C 17.699219 20.167969 16.871094 19.886719 16.234375 19.328125 C 15.597656 18.765625 15.253906 18.035156 15.203125 17.136719 Z M 13.152344 8.765625 C 12.230469 8.765625 11.476563 9.308594 10.898438 10.390625 C 10.316406 11.476563 10.027344 12.730469 10.027344 14.15625 C 10.027344 15.171875 10.226563 15.960938 10.621094 16.527344 C 11.015625 17.09375 11.523438 17.375 12.152344 17.375 C 13.117188 17.375 13.878906 16.84375 14.433594 15.773438 C 14.984375 14.707031 15.261719 13.28125 15.261719 11.496094 C 15.261719 10.648438 15.070313 9.984375 14.683594 9.496094 C 14.300781 9.011719 13.789063 8.765625 13.152344 8.765625 Z"></path></svg>
+					<span class="is-visible">administracion@comercializadoralava.com.mx</span>
+					<span class="is-hidden">administracion@comercializadoralava<br>.com.mx</span>
+				</div>
+
+
+				<div class="page-section__item">
+					<svg class="location-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32,6c-12.15,0-22,9.85-22,22c0,5.501,2.024,10.526,5.361,14.383L32,61l16.639-18.617C51.976,38.526,54,33.501,54,28	C54,15.85,44.15,6,32,6z M32,37c-4.971,0-9-4.029-9-9c0-4.971,4.029-9,9-9s9,4.029,9,9C41,32.971,36.971,37,32,37z"></path></svg>
+					<span>Avenida de los Insurgentes #1523. Colonia "Las Misiones". CP: 36557</span>
+				</div>
+
+				<div class="page-section__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d933.2670734073505!2d-101.359572821696!3d20.66680037485437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c7e336557212f%3A0x4de74d2df2a5cfb6!2sComercializadora%20Lava!5e0!3m2!1ses-419!2smx!4v1624512201907!5m2!1ses-419!2smx" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+			Comercializadora Agroindustrial Lava, 2025. Todos los derechos reservados.
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</body>	
+
+</html>
